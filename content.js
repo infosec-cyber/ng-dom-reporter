@@ -1,7 +1,7 @@
 
 function inject() {
     console.log("Passive Bounty Hunter is running 2...");
-    const observer = new MutationObserver((mutationsList, observer) => {
+    const observer = new MutationObserver((mutationsList, _observer) => {
         for (const mutation of mutationsList) {
             if (mutation.type === 'childList') {
                 mutation.addedNodes.forEach(node => {
