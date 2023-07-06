@@ -19,8 +19,7 @@ function inject() {
                                 const initData = attr.value;
 
                                 console.log(
-                                    `Bounty: %c ${attr.name} ${initData}`, 'background: #222; color: #bada55',
-                                    element
+                                    `Bounty: %c ${attr.name} ${initData}`, 'background: #222; color: #bada55'
 
                                 );
                             });
