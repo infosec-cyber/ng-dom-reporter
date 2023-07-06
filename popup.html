@@ -1,13 +1,24 @@
 <!-- popup.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angular ng-init Logger</title>
-    <script src="popup.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 300px;
+            padding: 10px;
+        }
+        #blacklist {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-<button id="log-ng-init">Log ng-init data</button>
+<h2>Blacklist commands</h2>
+<textarea id="blacklist" rows="10">ng-cloak
+</textarea>
+<br />
+<button id="save">Save</button>
+<script src="popup.js"></script>
 </body>
 </html>
